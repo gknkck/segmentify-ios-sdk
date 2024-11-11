@@ -9,7 +9,7 @@ public class FacetedResponseModel: Codable {
     public var facets: [Facet]?
     public var meta: Meta?
     public var contents: [Content]?
-    public ar banners: [Banner]?
+    public var banners: [Banner]?
     var meanings: [JSONAny]?
     public var products: [Product]?
     public var executable: Bool?
