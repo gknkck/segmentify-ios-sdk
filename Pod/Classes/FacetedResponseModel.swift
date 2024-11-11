@@ -6,14 +6,14 @@ import Foundation
 
 // MARK: - FacetedResponseModel
 public class FacetedResponseModel: Codable {
-    var facets: [Facet]?
-    var meta: Meta?
-    var contents: [Content]?
-    var banners: [Banner]?
+    public var facets: [Facet]?
+    public var meta: Meta?
+    public var contents: [Content]?
+    public ar banners: [Banner]?
     var meanings: [JSONAny]?
-    var products: [Product]?
-    var executable: Bool?
-    var instanceId: String?
+    public var products: [Product]?
+    public var executable: Bool?
+    public var instanceId: String?
 
     init(facets: [Facet]?, meta: Meta?, contents: [Content]?, banners: [Banner]?, meanings: [JSONAny]?, products: [Product]?, executable: Bool?, instanceId: String?) {
         self.facets = facets
@@ -490,22 +490,22 @@ extension Params {
 
 // MARK: - Product
 public class Product: Codable {
-    var productId: String?
-    var name: String?
-    var url: String?
-    var image: String?
-    var price: Double?
-    var priceText: String?
-    var oldPrice: Double?
-    var oldPriceText, specialPriceText: String?
-    var category: [String]?
-    var lastUpdateTime: Int?
-    var inStock: Bool?
-    var insertTime, publishTime: Int?
-    var brand: String?
-    var language: String?
-    var currency: String?
-    var params: [String:String]?
+    public var productId: String?
+    public var name: String?
+    public var url: String?
+    public var image: String?
+    public var price: Double?
+    public var priceText: String?
+    public var oldPrice: Double?
+    public var oldPriceText, specialPriceText: String?
+    public var category: [String]?
+    public var lastUpdateTime: Int?
+    public var inStock: Bool?
+    public var insertTime, publishTime: Int?
+    public var brand: String?
+    public var language: String?
+    public var currency: String?
+    public var params: [String:String]?
 
     enum CodingKeys: String, CodingKey {
         case productId, name, url, image, price, priceText, oldPrice, oldPriceText, specialPriceText, category, lastUpdateTime, inStock, insertTime, publishTime, brand, language, currency, params
